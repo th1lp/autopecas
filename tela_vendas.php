@@ -22,7 +22,7 @@
                         <p class="card-category">Confira os Produtos</p>
                     </div>
                     <div class="card-body">
-                        <table id="example" class="table">
+                    <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>Código</th>

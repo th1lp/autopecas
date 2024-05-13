@@ -1,0 +1,281 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #001827, #001d30); /* Gradiente Laranja e Amarelo */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg,#001827, #001d30); /* Gradiente Azul Escuro e Azul */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+#logo svg {
+    margin-right: 10px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+#auto{
+    color: #ffffff;
+    text-align: center; /* H1 centralizado */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do h1 */
+    font-size: 80px;
+    font-family: "Alfa Slab One", serif;
+}
+
+.navigation-menu li {
+    position: relative;
+    clear: both;
+}
+
+.navigation-menu a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #F4F4F4;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.subnav li {
+    width: 180px;
+    padding: 10px;
+}
+
+.card-med {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-image {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Main Content Styles */
+.hero {
+    background-color: #E7E7E7;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: linear-gradient(135deg, #00072E, #00416a); /* Gradiente Azul Escuro e Azul */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #11248d, #00416a); /* Gradiente Azul Escuro e Azul */
+    color: #ffffff
+}
+
+/* Featured Products Styles */
+.featured-products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h2{
+    color: #F4F4F4;
+    padding-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #0D0D0D, #333); /* Gradiente Preto e Cinza */
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-section.about .contact span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer-section.links ul li {
+    margin-right: 20px;
+}
+
+.footer-section.links ul li:last-child {
+    margin-right: 0;
+}
+
+.contact-form .text-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn-big {
+    width: 100%;
+    background: linear-gradient(135deg, #00090D, #00416a); /* Gradiente Azul Escuro e Azul */
+    color: #fff;
+}
+
+.contact-form .btn-big:hover {
+    background: linear-gradient(135deg, #11248d, #00416a); /* Gradiente Azul Escuro e Azul */
+    color: #d3d4d8;
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+    background: linear-gradient(135deg, #002d41, #0a69a4); /* Gradiente Azul Escuro e Azul */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Iridescent Effect */
+@keyframes iridescent {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.iridescent {
+    animation: iridescent 5s infinite;
+}

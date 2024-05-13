@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>A.P.S</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="_css/menu.css">
+    <title>A.P.S</title>
 </head>
 
 <body>
@@ -17,14 +16,6 @@
             <img src="_img/OIG1-removebg-preview.png" alt="logo">
         </div>
         <h1 id="auto">A.P.S</h1>
-        <nav>
-            <ul class="navigation-menu">
-                <li><a href="tela_add.php">Adicionar</a></li>
-                <li><a href="tela_list.php">Produtos</a></li>
-                <li><a href="tela_vendas.php">Vendas</a></li>
-                <li><a href="#">Calendario</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -33,6 +24,9 @@
                 <h1>Seja bem-vindo a A.P.S</h1>
                 <p>Adicione aqui os seus produtos</p>
                 <a href="tela_add.php" class="btn">Adicionar</a>
+                <a class="btn" href="tela_list.php">Produtos</a>
+                <a class="btn" href="tela_vendas.php">Vendas</a>
+                <a class="btn" href="tela_calendario.php">Calendario</a>
             </div>
         </section>
 

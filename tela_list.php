@@ -22,35 +22,35 @@
                         <p class="card-category">Confira os Nomes</p>
                     </div>
                     <div class="card-body ">
-                        <table id="example" class="display" style="width:100%">
-                            <thead>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Código</th>
+                                <th>Fornecedor</th>
+                                <th>Valor da Compra</th>
+                                <th>Quantidade</th>
+                                <th>Valor da Venda</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            include "_scripts/config.php";
+                            $sql = "SELECT * FROM estoque";
+                            $query  = $mysqli->query($sql);
+                            while ($dados = $query->fetch_array()) {
+                            ?>
                                 <tr>
-                                    <th>Nome</th>
-                                    <th>codigo</th>
-                                    <th>fornecedor</th>
-                                    <th>valor da compra</th>
-                                    <th>quantidade</th>
-                                    <th>valor da venda</th>
+                                    <td><?php echo $dados['nome']; ?></td>
+                                    <td><?php echo $dados['codigo']; ?></td>
+                                    <td><?php echo $dados['fornecedor']; ?></td>
+                                    <td><?php echo $dados['valorc']; ?></td>
+                                    <td><?php echo $dados['quantidade']; ?></td>
+                                    <td><?php echo $dados['valorv']; ?></td>
                                 </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                include "_scripts/config.php";
-                                $sql = "SELECT * FROM estoque";
-                                $query  = $mysqli->query($sql);
-                                while ($dados = $query->fetch_array()) {
-                                ?>
-                                    <tr>
-                                        <td><?php echo $dados['nome']; ?></td>
-                                        <td><?php echo $dados['codigo']; ?></td>
-                                        <td><?php echo $dados['fornecedor']; ?></td>
-                                        <td><?php echo $dados['valorc']; ?></td>
-                                        <td><?php echo $dados['quantidade']; ?></td>
-                                        <td><?php echo $dados['valorv']; ?></td>
-                                    </tr>
-                                <?php } ?>
-                            </tbody>
-                        </table>
+                            <?php } ?>
+                        </tbody>
+                    </table>
                     </div>
                     <div class="card-footer ">
                         <div class="stats">

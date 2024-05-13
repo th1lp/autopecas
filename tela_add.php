@@ -4,8 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="_css/add.css">
+    <link rel="stylesheet" href="_css/add.css">
     <title>Adicionar Produto</title>
+    <style>
+        /* Inline CSS for header image */
+        header img {
+            width: 150px;
+        }
+
+        /* Inline CSS for footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-bottom {
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +36,7 @@
         <div class="content">
             <div id="adicionar-produto">
                 <form method="post" action="_scripts/salvar_add.php">
-                    <h1 id="h1">Adicionar Produto</h1>
+                    <h1>Adicionar Produto</h1>
 
                     <div class="inputBox">
                         <label for="nome" class="labelInput">Nome do Produto:</label>
@@ -53,9 +70,8 @@
 
                     <input type="submit" value="Enviar">
                     <p class="link">
-                        <a href="menu.php"> Voltar </a>
+                        <a href="menu.php">Voltar</a>
                     </p>
-
                 </form>
             </div>
         </div>
@@ -63,7 +79,7 @@
 
     <footer>
         <div class="footer-bottom">
-            &copy; 2024 AutoPecas Store | Designed by T.v.Almeida
+            &copy; 2024 AutoPeças Store | Designed by T.v.Almeida
         </div>
     </footer>
 

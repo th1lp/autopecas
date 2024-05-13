@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Tempo de geração: 11/05/2024 às 04:33
+-- Tempo de geração: 13/05/2024 às 22:23
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -24,6 +24,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura para tabela `estoque`
+--
+
+CREATE TABLE `estoque` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(45) DEFAULT NULL,
+  `codigo` varchar(45) DEFAULT NULL,
+  `fornecedor` varchar(45) DEFAULT NULL,
+  `valorc` float DEFAULT NULL,
+  `quantidade` int(10) DEFAULT NULL,
+  `valorv` float DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `estoque`
+--
+
+INSERT INTO `estoque` (`id`, `nome`, `codigo`, `fornecedor`, `valorc`, `quantidade`, `valorv`) VALUES
+(1, 'parachoque', '234', 'ford', 456, 5, 657),
+(2, 'para lama', '345', 'ford', 120, 12, 145);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura para tabela `usuarios`
 --
 
@@ -39,11 +63,18 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
-(1, 'thiago almeida', 'thiagovitoria8005@gmail.com', 'th10lp');
+(1, 'thiago almeida', 'thiagovitoria8005@gmail.com', 'th10lp'),
+(8, 'thiago vitor', 'thiago8005@gmail.com', 'th10lp');
 
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices de tabela `estoque`
+--
+ALTER TABLE `estoque`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `usuarios`
@@ -56,10 +87,16 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de tabela `estoque`
+--
+ALTER TABLE `estoque`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

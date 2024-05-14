@@ -21,7 +21,7 @@
 
             if($total>=1){
                 $_SESSION['usuarios'] = $login;
-                echo "<script>window.location='../menu.php'</script>";
+                echo "<script>window.location='../index.php'</script>";
 
             }else{ ?>
             
@@ -32,7 +32,7 @@
                     icon: "error"
                 });
                 </script>
-            echo "<script>window.location='../index.html'</script>";
+            echo "<script>window.location='../login.html'</script>";
                 
             <?php } 
 

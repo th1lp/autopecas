@@ -20,14 +20,14 @@ if($query){?>
             icon: "success"
             }).then(okay => {
                 if(okay){
-                    window.location.href = "../menu.php";
+                    window.location.href = "../index.php";
                 }
             });
      </script>
                 
 <?php }else{
     echo "<script>alert('Login inválido');</script>";
-    echo "<script>window.location='../index.php'</script>";
+    echo "<script>window.location='../login.html'</script>";
 }
 
 ?>

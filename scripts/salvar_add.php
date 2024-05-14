@@ -28,7 +28,7 @@ if ($stmt->execute()) {
             icon: "success"
         }).then(okay => {
             if (okay) {
-                window.location.href = "../tela_list.php";
+                window.location.href = "../menu.php";
             }
         });
     </script>

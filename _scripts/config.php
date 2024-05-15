@@ -4,7 +4,7 @@
     $senha = '';
     $banco = 'autopecas';
 
-    $mysqli = new mysqli($servidor, $usuario, $senha, $banco, 3307);
+    $mysqli = new mysqli($servidor, $usuario, $senha, $banco, 3306);
 
     //if($mysqli->connect_errno){
     //    echo "Erro";

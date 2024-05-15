@@ -38,7 +38,7 @@ if ($stmt->execute()) {
 } else {
     // Em caso de erro na execução da consulta
     echo "<script>alert('Erro ao cadastrar.');</script>";
-    echo "<script>window.location='../tela_cadastro.php'</script>";
+    echo "<script>window.location='../add_produtos.php'</script>";
 }
 
 $stmt->close(); // Fechar o statement

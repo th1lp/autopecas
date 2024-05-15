@@ -21,10 +21,10 @@
 
             if($total>=1){
                 $_SESSION['usuarios'] = $login;
-                echo "<script>window.location='../index.php'</script>";
+                echo "<script>window.location='../menu.php'</script>";
 
             }else{ ?>
-            
+
             <script>
                 Swal.fire({
                     title: "Erro!",
@@ -32,13 +32,13 @@
                     icon: "error"
                 });
                 </script>
-            echo "<script>window.location='../login.html'</script>";
-                
-            <?php } 
+            echo "<script>window.location='../menu.php'</script>";
+
+            <?php }
 
         }else{
             echo "<script>alert('Login inválido');</script>";
-            echo "<script>window.location='../index.php'</script>";
+            echo "<script>window.location='../index.html'</script>";
         }
 
 
